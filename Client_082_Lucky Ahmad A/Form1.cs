@@ -20,8 +20,8 @@ namespace Client_082_Lucky_Ahmad_A
         }
         public void TampilData()
         {
-            var List = data.getAllData();
-            dataGridView1.DataSource = List;
+           /* var List = data.getAllData();
+            dataGridView1.DataSource = List;*/
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -37,13 +37,13 @@ namespace Client_082_Lucky_Ahmad_A
         private void button1_Click(object sender, EventArgs e)
         {
 
-            string nim = textBoxNIM.Text;
+            /*string nim = textBoxNIM.Text;
             string nama = textBoxNama.Text;
             string prodi = textBoxProdi.Text;
             string angkatan = textBoxAngkatan.Text;
             data.insertMahasiswa(nim, nama, prodi, angkatan);
             Clear();
-            dataGridView1.DataSource = data.getAllData();
+            dataGridView1.DataSource = data.getAllData();*/
         }
         private void Clear()
         {
@@ -62,24 +62,24 @@ namespace Client_082_Lucky_Ahmad_A
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = data.getAllData();
+           /* dataGridView1.DataSource = data.getAllData();
             TampilData();
 
             buttonDelete.Enabled = false;
-            buttonUpdate.Enabled = false;
+            buttonUpdate.Enabled = false;*/
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            ClassData classData = new ClassData();
+            /*ClassData classData = new ClassData();
             classData.deleteMahasiswa(textBoxNIM.Text);
             Clear();
-            dataGridView1.DataSource = classData.getAllData();
+            dataGridView1.DataSource = classData.getAllData();*/
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            Mahasiswa mhs = new Mahasiswa();
+            /*Mahasiswa mhs = new Mahasiswa();
             mhs.nim = textBoxNIM.Text;
             mhs.nama = textBoxNama.Text;
             mhs.prodi = textBoxProdi.Text;
@@ -88,12 +88,12 @@ namespace Client_082_Lucky_Ahmad_A
             ClassData classData = new ClassData();
             classData.updateDatabase(mhs);
             Clear();
-            dataGridView1.DataSource = classData.getAllData();
+            dataGridView1.DataSource = classData.getAllData();*/
         }
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            if (textBoxNIM.Text != "")
+          /*  if (textBoxNIM.Text != "")
             {
                 string nim = textBoxNIM.Text;
                 List<Mahasiswa> mhs = new List<Mahasiswa>();
@@ -104,13 +104,13 @@ namespace Client_082_Lucky_Ahmad_A
             else
             {
                 dataGridView1.DataSource = data.getAllData();
-            }
+            }*/
         }
 
         private void buttonJumlah_Click(object sender, EventArgs e)
         {
-            var jmlh = data.Jumlahdata();
-            label7.Text = jmlh;
+            /*var jmlh = data.Jumlahdata();
+            label7.Text = jmlh;*/
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

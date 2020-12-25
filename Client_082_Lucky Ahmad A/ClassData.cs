@@ -12,7 +12,7 @@ namespace Client_082_Lucky_Ahmad_A
 {
     class ClassData
     {
-        string baseUrl = "http://localhost:1907/";
+      /*  string baseUrl = "http://localhost:1907/";
 
         public void insertMahasiswa(string nim, string nama, string prodi, string angkatan)
         {
@@ -82,6 +82,6 @@ namespace Client_082_Lucky_Ahmad_A
 
             }
             return deleted;
-        }
+        }*/
     }
 }
